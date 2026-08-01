@@ -1,16 +1,34 @@
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#ff4d9d,#8e44ff);
-color:white;
-overflow:hidden;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Dhaniya 💙</title>
 
-.fade{
-animation:fade .6s;
-}
+<link rel="stylesheet" href="style.css">
+</head>
 
-@keyframes fade{
-from{opacity:0;transform:translateY(20px);}
-to{opacity:1;transform:translateY(0);}
-}
+<body>
+
+<div class="container">
+
+<h1>Happy Birthday Dhaniya 💙</h1>
+
+<p class="typing">
+To the most amazing person...✨
+</p>
+
+<img id="photo" src="images/photo1.jpg">
+
+<button onclick="next()">Continue 💙</button>
+
+</div>
+
+<audio id="bgm" autoplay loop>
+<source src="music.mp3" type="audio/mp3">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
