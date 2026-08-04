@@ -1,33 +1,24 @@
-const photos=[
-"images/photo1.jpg",
-"images/photo2.jpg",
-"images/photo3.jpg",
-"images/photo4.jpg",
-"images/photo5.jpg"
+const photos = [
+"i0.jpeg",
+"i.jpeg",
+"m.jpeg",
+"p.jpeg",
+"WhatsApp Image 2026-07-11 at 9.56.13 AM.jpeg"
 ];
 
-let i=0;
+let current = 0;
 
 function next(){
+current++;
 
-i++;
-
-if(i<photos.length){
-
-document.getElementById("photo").src=photos[i];
-
+if(current < photos.length){
+document.getElementById("photo").src = photos[current];
 }else{
-
 document.body.innerHTML=`
-<div style="display:flex;justify-content:center;align-items:center;height:100vh;background:linear-gradient(#0f172a,#2563eb);color:white;text-align:center;flex-direction:column;">
+<div style="height:100vh;display:flex;justify-content:center;align-items:center;flex-direction:column;background:linear-gradient(135deg,#0f172a,#2563eb);color:white;text-align:center;">
 <h1>💙 Happy Birthday Dhaniya 💙</h1>
-
-<h2>May your smile shine forever ✨</h2>
-
-<p>Stay happy, stay blessed and keep smiling always 💙</p>
-
-</div>
-`;
-
+<h2>Love you as always ✨</h2>
+<p>Thank you for being such an amazing person. Stay happy always! 💙</p>
+</div>`;
 }
 }
